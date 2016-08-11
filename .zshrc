@@ -49,7 +49,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting)
+plugins=(git nvm zsh-syntax-highlighting)
 
 # User configuration
 
@@ -84,6 +84,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export NVM_DIR="/home/$USER/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-export PATH=$PATH:/home/$USER/.multirust/toolchains/nightly/cargo/bin
+export PATH=$PATH:/home/$USER/.multirust/toolchains/nightly/cargo/bin:/home/$USER/.multirust/toolchains/stable/cargo/bin
 
 export RUST_SRC_PATH="$HOME/git/rustc-nightly/src/";
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+alias cargo='nocorrect cargo '
