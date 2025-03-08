@@ -1,5 +1,34 @@
-// Place your settings in this file to overwrite the default settings
 {
-	"editor.insertSpaces": true,
-	"typescript.tsdk": "node_modules/typescript/lib"
+    "window.dialogStyle": "custom",
+    "window.titleBarStyle": "custom",
+    "dev.containers.dockerPath": "podman",
+    "debug.console.fontSize": 12,
+    "editor.fontSize": 12,
+    "editor.minimap.enabled": false,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.activityBar.location": "hidden",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.fontSize": 12,
+    "remote.autoForwardPortsSource": "hybrid",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.editorAssociations": {
+        "*.svg": "default"
+    },
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
